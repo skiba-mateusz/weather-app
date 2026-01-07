@@ -16,7 +16,7 @@ weatherForm.addEventListener("submit", async function (e) {
       return;
     }
 
-    output.textContent = `${data.name}: ${data.main.temp} ℃`;
+    output.textContent = `${data.name}: ${data.main.temp} ℃ | ${data.weather[0].main}`;
   } catch (err) {
     output.textContent = err;
   }
